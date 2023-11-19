@@ -24,7 +24,7 @@ export const Tokens: React.FC = () => {
 
   return (
     <section className={styles.section}>
-      <h3 className={styles.title}>Portfolio</h3>
+      <h3 className={styles.title}>portfolio</h3>
 
       <div className={styles.tokens}>
         {data?.map((token, id) => {
