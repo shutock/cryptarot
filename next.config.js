@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  externals: ["pino-pretty"],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

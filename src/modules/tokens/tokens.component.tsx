@@ -1,7 +1,7 @@
 "use client";
 
-import { Balance, useBalance } from "@/hooks";
-import React, { CSSProperties } from "react";
+import { IBalance, useBalance } from "@/hooks";
+import React from "react";
 import { useAccount } from "wagmi";
 
 import styles from "./tokens.module.scss";
@@ -35,7 +35,7 @@ export const Tokens: React.FC = () => {
   );
 };
 
-type Props = { token: Balance[0] };
+type Props = { token: IBalance[0] };
 
 const Token: React.FC<Props> = ({
   token: {

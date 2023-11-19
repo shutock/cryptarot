@@ -2,10 +2,10 @@ import { create } from "zustand";
 
 import { type Address } from "wagmi";
 
-import { type Balance } from "./balance.type";
+import { type IBalance } from "./balance.type";
 
 type State = {
-  data?: Balance;
+  data?: IBalance;
   isLoading: boolean;
   error?: string;
 };

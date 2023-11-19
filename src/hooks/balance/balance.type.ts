@@ -1,6 +1,6 @@
 import { type Address } from "wagmi";
 
-export type Balance = {
+export type IBalance = {
   token_address: Address;
   symbol: string;
   name: string;
