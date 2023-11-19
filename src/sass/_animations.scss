@@ -1,0 +1,92 @@
+$enterFromRight: enterFromRight;
+$enterFromLeft: enterFromLeft;
+$exitToRight: exitToRight;
+$exitToLeft: exitToLeft;
+$enterFromBottom: enterFromBottom;
+$exitToBottom: exitToBottom;
+$fadeIn: fadeIn;
+$fadeOut: fadeOut;
+
+@keyframes enterFromRight {
+  from {
+    translate: 25% 0;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes enterFromLeft {
+  from {
+    translate: -25% 0;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes exitToRight {
+  from {
+    translate: 0 0;
+    opacity: 1;
+  }
+  to {
+    translate: 25% 0;
+    opacity: 0;
+  }
+}
+
+@keyframes exitToLeft {
+  from {
+    translate: 0 0;
+    opacity: 1;
+  }
+  to {
+    translate: -25% 0;
+    opacity: 0;
+  }
+}
+
+@keyframes enterFromBottom {
+  from {
+    translate: 0 -2rem;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes exitToBottom {
+  from {
+    translate: 0 0;
+    opacity: 1;
+  }
+  to {
+    translate: 0 -2rem;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

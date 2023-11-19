@@ -1,0 +1,9 @@
+$page: calc(1440rem / 16);
+$center: calc(960rem / 16);
+$mobile: calc(600rem / 16);
+
+@mixin wrapper($size: $page) {
+  margin: auto;
+  padding: 1rem;
+  max-width: $size;
+}

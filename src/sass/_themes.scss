@@ -1,0 +1,27 @@
+@mixin dark-theme {
+  --background: 0, 0, 0;
+  --background-overlay: 80%;
+  --text: 255, 255, 255;
+  --overlay-1: 10%;
+  --overlay-2: 20%;
+  --overlay-3: 30%;
+  --overlay-1-solid: 10%;
+  --overlay-2-solid: 20%;
+  --overlay-3-solid: 30%;
+  --border: 20%;
+  --saturation: 60%;
+}
+
+@mixin light-theme {
+  --background: 255, 255, 255;
+  --background-overlay: 60%;
+  --text: 0, 0, 0;
+  --overlay-1: 7%;
+  --overlay-2: 14%;
+  --overlay-3: 21%;
+  --overlay-1-solid: 93%;
+  --overlay-2-solid: 86%;
+  --overlay-3-solid: 79%;
+  --border: 14%;
+  --saturation: 80%;
+}

@@ -1,0 +1,74 @@
+$background: rgba(var(--background), 100%);
+$background-alt: rgba(var(--text), 100%);
+
+$background-overlay: rgba(var(--background), var(--background-overlay));
+$background-overlay-alt: rgba(var(--text), var(--background-overlay));
+
+$overlay-1: rgba(var(--text), var(--overlay-1));
+$overlay-1-solid: hsl(0, 0%, var(--overlay-1-solid));
+$overlay-1-alt: rgba(var(--background), var(--overlay-1));
+// $overlay-1-alt-solid: rgba(var(--background), var(--overlay-1));
+
+$overlay-2: rgba(var(--text), var(--overlay-2));
+$overlay-2-solid: hsl(0, 0%, var(--overlay-2-solid));
+$overlay-2-alt: rgba(var(--background), var(--overlay-2));
+// $overlay-2-alt-solid: rgba(var(--background), var(--overlay-2));
+
+$overlay-3: rgba(var(--text), var(--overlay-3));
+$overlay-3-solid: hsl(0, 0%, var(--overlay-3-solid));
+$overlay-3-alt: rgba(var(--background), var(--overlay-3));
+// $overlay-3-alt-solid: rgba(var(--background), var(--overlay-3));
+
+$border: rgba(var(--text), var(--border));
+$border-alt: rgba(var(--background), var(--border));
+
+$accent: rgba(var(--text), 100%);
+$accent-alt: rgba(var(--background), 100%);
+
+$primary: rgba(var(--text), 80%);
+$primary-alt: rgba(var(--background), 80%);
+
+$secondary: rgba(var(--text), 60%);
+$secondary-alt: rgba(var(--background), 60%);
+
+$hidden: rgba(var(--text), 40%);
+$hidden-alt: rgba(var(--background), 40%);
+
+$darkMode: hsl(200, var(--saturation), 50%);
+$lightMode: hsl(55, var(--saturation), 50%);
+
+$main-light-accent: hsla(210, var(--saturation), 70%, 100%);
+$main-light-primary: hsla(210, var(--saturation), 70%, 80%);
+$main-light-hidden: hsla(210, var(--saturation), 70%, 40%);
+$main-light-overlay: hsla(210, var(--saturation), 70%, 20%);
+
+$main-dark-accent: hsla(220, var(--saturation), 20%, 100%);
+$main-dark-primary: hsla(220, var(--saturation), 20%, 80%);
+$main-dark-hidden: hsla(220, var(--saturation), 20%, 40%);
+$main-dark-overlay: hsla(220, var(--saturation), 20%, 20%);
+
+$error-accent: hsla(355, var(--saturation), 50%, 100%);
+$error-primary: hsla(355, var(--saturation), 50%, 80%);
+$error-hidden: hsla(355, var(--saturation), 50%, 40%);
+$error-overlay: hsla(355, var(--saturation), 50%, 20%);
+
+$warning-accent: hsla(25, var(--saturation), 50%, 100%);
+$warning-primary: hsla(25, var(--saturation), 50%, 80%);
+$warning-hidden: hsla(25, var(--saturation), 50%, 40%);
+$warning-overlay: hsla(25, var(--saturation), 50%, 20%);
+
+$success-accent: hsla(140, var(--saturation), 40%, 100%);
+$success-primary: hsla(140, var(--saturation), 40%, 80%);
+$success-hidden: hsla(140, var(--saturation), 40%, 40%);
+$success-overlay: hsla(140, var(--saturation), 40%, 20%);
+
+$main-gradient-accent: radial-gradient(
+    100% 100% at 50% 0%,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(36, 242, 255, 0.7) 24.48%,
+    rgba(223, 26, 255, 0.7) 100%
+  ),
+  linear-gradient(180deg, #b665f5 0%, #0875f5 100%);
+
+$white: #ffffff;
+$black: #000000;

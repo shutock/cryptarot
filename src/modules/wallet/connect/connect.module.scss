@@ -1,0 +1,55 @@
+@use "@/sass/effects";
+@use "@/sass/colors";
+@use "@/sass/fonts";
+@use "@/sass/sizes";
+
+.section {
+  @include sizes.wrapper(sizes.$mobile);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-block-start: 2rem;
+  border-radius: 2rem;
+  background: colors.$overlay-1;
+  padding: 1rem;
+
+  .title {
+    @include fonts.title-1;
+  }
+
+  .connectors {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .connector {
+      @include fonts.button;
+      display: flex;
+      justify-content: center;
+      transition: effects.$transition;
+      cursor: pointer;
+      border-radius: 1rem;
+      background: colors.$overlay-1;
+      padding: 1rem;
+
+      &:active {
+        transform: effects.$active;
+        background: colors.$overlay-2;
+      }
+
+      @media screen and (hover) {
+        &:hover {
+          transform: effects.$hover;
+          background: colors.$overlay-2;
+        }
+
+        &:active {
+          background: colors.$overlay-3;
+        }
+      }
+
+      &.pending {
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@use "@/sass/colors";
+
+$icon: var(--font-icon, sans-serif), sans-serif;
+$text: var(--font-text, sans-serif), sans-serif;
+
+@mixin title-large {
+  margin: -0.125em 0;
+  color: colors.$accent;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.125em;
+  letter-spacing: -0.025em;
+}
+
+@mixin title-1 {
+  margin: -0.25em 0;
+  color: colors.$accent;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  letter-spacing: -0.0125em;
+}
+
+@mixin title-2 {
+  margin: -0.25em 0;
+  color: colors.$accent;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  letter-spacing: -0.0125em;
+}
+
+@mixin title-3 {
+  margin: -0.25em 0;
+  color: colors.$accent;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  letter-spacing: -0.0125em;
+}
+
+@mixin headline {
+  margin: -0.125em 0;
+  color: colors.$accent;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25em;
+}
+
+@mixin body {
+  margin: -0.25em 0;
+  color: colors.$primary;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+@mixin subheading {
+  margin: -0.25em 0;
+  color: colors.$secondary;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+@mixin callout {
+  margin: -0.25em 0;
+  color: colors.$secondary;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+}
+
+@mixin footnote {
+  margin: -0.25em 0;
+  color: colors.$hidden;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
+
+@mixin caption {
+  margin: -0.25em 0;
+  color: colors.$secondary;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5em;
+  letter-spacing: 0.025em;
+}
+
+@mixin button {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1em;
+  letter-spacing: -0.0125em;
+}

@@ -1,0 +1,9 @@
+@use "@/sass/effects";
+
+.wrapper {
+  -webkit-backdrop-filter: effects.$blur-medium;
+  position: sticky;
+  position: -webkit-sticky;
+  backdrop-filter: effects.$blur-medium;
+  inset: 1rem auto auto auto;
+}

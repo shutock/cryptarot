@@ -1,0 +1,81 @@
+@use "@/sass/effects";
+@use "@/sass/colors";
+@use "@/sass/fonts";
+@use "@/sass/sizes";
+
+.section {
+  @include sizes.wrapper(sizes.$mobile);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-block-start: 2rem;
+  border-radius: 2rem;
+  background: colors.$overlay-1;
+  padding: 1rem;
+
+  .container {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .primary {
+    @include fonts.title-3;
+  }
+
+  .secondary {
+    @include fonts.caption;
+  }
+}
+
+.disconnect {
+  @include fonts.button;
+  transition: effects.$transition;
+  border-radius: 1rem;
+  background: colors.$error-overlay;
+  padding: 0.75rem 1rem;
+  color: colors.$error-accent;
+  cursor: pointer;
+
+  &:active {
+    transform: effects.$active;
+    opacity: 0.8;
+  }
+
+  @media screen and (hover) {
+    &:hover {
+      transform: effects.$hover;
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.avatar {
+  display: block;
+  display: grid;
+  position: relative;
+  place-items: center;
+  border-radius: 1rem;
+  background: colors.$overlay-1;
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  overflow: hidden;
+
+  .image {
+    position: absolute;
+    inset: 0;
+  }
+
+  .emoji {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,73 @@
+@use "@/sass/colors";
+
+$transition: 0.2s ease-in-out;
+$transition-slow: 0.4s ease-in-out;
+$transition-fast: 0.1s ease-in-out;
+
+@mixin sr-only {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  margin: -1px;
+  border-width: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+$hover: translateY(-0.125rem);
+$active: scale(0.975);
+
+$animation-skeleton: skeleton 1s ease-in-out infinite;
+
+$border-style: 1px solid colors.$border;
+
+$blur-medium: blur(1rem) saturate(150%);
+
+$shadow-outline: 0 0 0 1px;
+
+@keyframes skeleton {
+  0% {
+    background: colors.$overlay-1;
+  }
+  75% {
+    background: colors.$overlay-2;
+  }
+  100% {
+    background: colors.$overlay-1;
+  }
+}
+
+@mixin button-hover-active {
+  transition: $transition;
+  transition-property: all;
+  background: colors.$overlay-1;
+
+  @media screen and (hover) {
+    &:hover {
+      transform: $transform-hover;
+      background: colors.$overlay-2;
+    }
+  }
+
+  &:active {
+    transform: $transform-active;
+    background: colors.$overlay-3;
+  }
+}
+
+@mixin link-hover-active {
+  transition: $transition;
+  transition-property: all;
+
+  @media screen and (hover) {
+    &:hover {
+      transform: $transform-hover;
+    }
+  }
+
+  &:active {
+    transform: $transform-active;
+  }
+}

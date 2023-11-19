@@ -1,0 +1,15 @@
+@use "@/sass/sizes";
+@use "@/sass/fonts";
+
+.section {
+  @include sizes.wrapper(sizes.$mobile);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-block-start: 2rem;
+
+  .title {
+    @include fonts.title-large;
+  }
+}
