@@ -2,10 +2,10 @@ import { create } from "zustand";
 
 import { type Address } from "wagmi";
 
-import { type IBalance } from "./balance.type";
+import { type Token } from "./token.type";
 
 type State = {
-  data?: IBalance;
+  data?: { [chain: string]: Token[] };
   isLoading: boolean;
   error?: string;
 };

@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { IBalance } from "..";
+import { Token } from "..";
 
 type State = {
   data?: string;
@@ -14,7 +14,7 @@ const initialState: State = {
 };
 
 type Actions = {
-  read: (params: { cards?: string[]; tokens?: IBalance }) => Promise<void>;
+  read: (params: { cards?: string[]; tokens?: Token[] }) => Promise<void>;
   reset: () => void;
 };
 

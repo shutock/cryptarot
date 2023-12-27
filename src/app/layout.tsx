@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
-
-import { Styles } from "@/sass";
 import { Wagmi } from "@/lib";
 
+import type { Metadata } from "next";
+
+import "@/sass/global.scss";
+
 export const metadata: Metadata = {
-  title: "Witchfolio",
+  title: "Cryptarot",
   description: "Portfolio management backed by the power of the tarot.",
 };
 
@@ -14,7 +15,6 @@ const RootLayout: React.FC<Props> = ({ children }) => {
   return (
     <Wagmi>
       <html lang="en">
-        <Styles />
         <body className={"dark"}>{children}</body>
       </html>
     </Wagmi>
