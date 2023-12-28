@@ -1,2 +1,2 @@
 export * from "./balance.hook";
-export * from "./balance.type";
+export * from "./token.type";

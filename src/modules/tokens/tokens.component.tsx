@@ -1,6 +1,6 @@
 "use client";
 
-import { IBalance, useBalance } from "@/hooks";
+import { Token, useBalance } from "@/hooks";
 import React from "react";
 import { useAccount } from "wagmi";
 
@@ -20,22 +20,36 @@ export const Tokens: React.FC = () => {
 
   if (!address) return false;
 
-  console.log(isLoading, data, error);
+  const chains = Object.keys(data ?? {});
 
   return (
     <section className={styles.section}>
       <h3 className={styles.title}>portfolio</h3>
 
       <div className={styles.tokens}>
-        {data?.map((token, id) => {
-          return <Token token={token} key={token.token_address + id} />;
+        {chains.map((chain, id) => {
+          return (
+            <div key={chain + id} className={styles.group}>
+              <h3>{chain.length < 4 ? chain.toUpperCase() : chain}</h3>
+
+              {data && data[chain].length > 0 ? (
+                data[chain].map((token, id) => {
+                  console.log(token);
+
+                  return <Token token={token} key={token.token_address + id} />;
+                })
+              ) : (
+                <p>No tokens found</p>
+              )}
+            </div>
+          );
         })}
       </div>
     </section>
   );
 };
 
-type Props = { token: IBalance[0] };
+type Props = { token: Token };
 
 const Token: React.FC<Props> = ({
   token: {
@@ -70,7 +84,7 @@ const Token: React.FC<Props> = ({
           // eslint-disable-next-line @next/next/no-img-element
           <img src={logo} alt={name} className={styles.image} />
         ) : (
-          <div className={styles.logo}>{name.at(0)}</div>
+          <div className={styles.logo}>{name?.at(0)}</div>
         )}
       </div>
       <div className={styles.name}>{name}</div>

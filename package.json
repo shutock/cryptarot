@@ -1,5 +1,5 @@
 {
-  "name": "tarot-portfolio-prediction",
+  "name": "cryptarot",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,23 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ai": "^2.2.24",
-    "classnames": "^2.3.2",
-    "geist": "^1.1.0",
-    "next": "^14.0.3",
-    "openai": "^4.19.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "ai": "^2.2.30",
+    "classnames": "^2.4.0",
+    "framer-motion": "^10.16.16",
+    "geist": "^1.2.0",
+    "next": "^14.0.4",
+    "openai": "^4.24.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sass": "^1.69.5",
-    "wagmi": "^1.4.7",
-    "zustand": "^4.4.6"
+    "wagmi": "^1.4.12",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "eslint": "^8.56.0",
     "eslint-config-next": "14.0.2",
-    "typescript": "^5"
+    "typescript": "^5.3.3"
   }
 }

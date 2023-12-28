@@ -12,4 +12,8 @@
   .title {
     @include fonts.title-large;
   }
+
+  .message {
+    line-height: 1.5;
+  }
 }
