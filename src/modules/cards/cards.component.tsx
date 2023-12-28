@@ -12,8 +12,10 @@ export const Cards: React.FC = () => {
 
   const { getCards, reset, cards } = useCards((state) => state);
 
+  const list = "crypto";
+
   const handler = () => {
-    getCards();
+    getCards({ list });
   };
 
   if (!address) return false;
@@ -29,7 +31,9 @@ export const Cards: React.FC = () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className={styles.image}
-                src={`/assets/cards/${card}.jpg`}
+                src={`/assets/cards/${list}/${card}.${
+                  list === "crypto" ? "png" : "jpg"
+                }`}
                 alt={card}
               />
               <span className={styles.title}>{card.replaceAll("-", " ")}</span>
